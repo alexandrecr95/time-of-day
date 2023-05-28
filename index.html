@@ -28,6 +28,13 @@
 			font-weight:normal;
 			margin:10px;
 			}
+
+		ul {margin:10px;}
+		h1,h2,h3,h4,h5,h6{
+			font-weight:normal;
+			margin:10px;
+			}
+
 		h1.masthead {margin-top:0;}
 		footer {
 			text-align:center;
@@ -40,9 +47,15 @@
 		<h1 class="masthead">Time of Day</h1>
 	</header>
     <main>
-	 <header><h3>A JavaScript Project by YOUR NAME HERE</h3></header>
+	 <header><h3>A JavaScript Project by Alexandre Correia</h3></header>
 	 <h3 id="my-greeting">Greeting Goes Here</h3>
-	    <p>Explain what your page does and how it works here!</p>
+	    <p>This page uses Javascript to determine the current hour, and presents a different image, custom message, and color based on each of the following times of day:</p>
+		<ul>
+			<li><b>Morning</b> (5am to 12 noon)</li>
+			<li><b>Afternoon</b> (12 noon to 6pm)</li>
+			<li><b>Evening</b> (6pm to 11pm)</li>
+			<li><b>Night</b> (11pm to 5am)</li>
+		</ul> 
 	  <img id="my-pic" src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
      <footer>
       <p><small>&copy; 2023 by 
@@ -75,7 +88,7 @@ each of the following times of day:
 	let myColor = " ";
 	let myPic = " ";
 
-	myHour = 24;
+	//myHour = 24;
 
 	console.log(myHour);
 
